@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Viga&display=swap");
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="sidenav-container">
+            <div id="ham-container" onclick="toggleSideNav(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+            <div id="mySideNav" class="sidenav-mob isVisible hide-nav">
+                <a class="active" href="#home">Home</a>
+                <a href="about">Exercises</a>
+                <a href="contact">Contact</a>
+                <div id="sign-in-div">
+                    <button id="sign-in" onclick="signIn()">Sign In</button>
+                    <div class="box-sign-in">
+                        Fill the forms down below to sign up with us!
+                        <div class="div-form">
+                            <form action="/action_page.php">
+                                <label for="fname">username</label><br />
+                                <input type="text" id="fname" name="fname" value="" /><br />
+                                <label for="lname">password</label><br />
+                                <input type="text" id="lname" name="lname" value="" /><br /><br />
+                                <input class="btn-submit" type="submit" value="Submit" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="darkMode()" class="darkmode">Dark Mode</button>
+            </div>
+        </div>
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="about">Exercises</a>
+            <a href="contact">Contact</a>
+            <div class="topnav-buttons">
+                <div id="sign-in-div">
+                    <button id="sign-in" onclick="signIn()">Sign In</button>
+                    <div class="box-sign-in">
+                        Fill the forms down below to sign up with us!
+                        <div class="div-form">
+                            <form action="/action_page.php">
+                                <label for="fname">username</label><br />
+                                <input type="text" id="fname" name="fname" value="" /><br />
+                                <label for="lname">password</label><br />
+                                <input type="text" id="lname" name="lname" value="" <input class="btn-submit"
+                                    type="submit" value="Submit" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="darkMode()" class="darkmode">Dark Mode</button>
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+    </div>
+
+    <div class="parent-container">
+        <div class="items item1">
+            <h2 class="heading-text">Welcome to my Gym App!</h2>
+            <p class="item-text">
+                Our fitness app empowers users to track and achieve their fitness goals. It features personalized 
+                record keeping for exercises like Bench Press, Squat, and Deadlift. Easily input and monitor personal 
+                bests, allowing for continuous progress and motivation on the path to improved strength and overall 
+                fitness.
+            </p>
+        </div>
+        <div class="items item2">
+            <h2 class="heading-text">Bench Press</h2>
+            <p class="item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatum incidunt
+                corporis, assumenda itaque dolores commodi quasi modi non porro quam necessitatibus consectetur odio
+                culpa voluptatem explicabo id sapiente earum perferendis cupiditate repudiandae facere libero? Eius
+                <button id="myModal">Chest Exercises</button>
+            </p>
+        </div>
+        <div class="items item3">
+            <h2 class="heading-text">Squat</h2>
+            <p class="item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, voluptate nostrum
+                aperiam ipsum vel accusamus nihil? Accusantium architecto obcaecati quas laborum commodi eius, alias
+                earum facere numquam ut reprehenderit atque quod animi esse excepturi beatae incidunt facilis et
+                <button id="myModal">Squat</button>
+            </p>
+
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>Some text in the Modal..</p>
+                </div>
+              
+              </div>
+              
+        </div>
+        <div class="items item4">
+            <h2 class="heading-text">Deadlift</h2>
+            <p class="item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, ipsa soluta 
+                consectetur ducimus est cum facilis reiciendis! Molestias odio quo fugiat nulla suscipit adipisci 
+                culpa, cum mollitia consectetur fuga laborum deleniti natus nobis magnam nemo ducimus animi quibusdam
+                <button id="myModal">Deadlift</button> 
+            </p>
+        </div>
+        <div class="items item5">
+            <h2 class="heading-text">Shoulder Press</h2>
+            <p class="item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione delectus consequatur
+                 officiis corporis aspernatur autem velit debitis sapiente pariatur eveniet. Repellat nam sit libero
+                 <button id="myModal">Shoulder Exercises</button> 
+            </p>
+        </div>
+    </div>
+
+    <div class="footer-mat">
+        <footer class="mateo">Created By Mateo 2023</footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
