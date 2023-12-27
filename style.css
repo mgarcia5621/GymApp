@@ -305,13 +305,14 @@ font-family: 'Viga', sans-serif;
     .heading-text {
         line-break: loose;
     }
-
+    
     .sidenav-container {
         display: flex;
     }
     
     .hero-banner {
-        width: 100%
+        width: 100%;
+        padding: 20px;
     }
 
     .banner-text-container {
@@ -322,11 +323,22 @@ font-family: 'Viga', sans-serif;
     .banner-btn button{
         width: 100%;
     }
-
+    .center-coach {
+        height: fit-content;
+    }
     .center-coach-text-container {
         width: 100%;
         padding-left: 0px;
         height: fit-content;
+    }
+
+    .centr-team-text-container {
+        padding: 10px;
+        padding-top: 30px;
+    }
+
+    .centr-t-container {
+        width: 101%;
     }
 
     .item-text {
