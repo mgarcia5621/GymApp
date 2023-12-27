@@ -325,11 +325,16 @@ font-family: 'Viga', sans-serif;
     }
     .center-coach {
         height: fit-content;
+        padding: 20px;
     }
     .center-coach-text-container {
         width: 100%;
         padding-left: 0px;
         height: fit-content;
+    }
+
+    .centr-team {
+        padding: 20px;
     }
 
     .centr-team-text-container {
