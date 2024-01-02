@@ -1,8 +1,7 @@
 * {
     font-family: 'Raleway', sans-serif;
-    font-family: 'Viga', sans-serif;
+font-family: 'Viga', sans-serif;
 }
-
 .topnav {
     display: flex;
     justify-content: center;
@@ -57,12 +56,6 @@
 
 .right {
     align-items: center;
-}
-
-.hero-desc {
-    font-size: 28px;
-    margin-top: 30px;
-    /* width: 53rem; */
 }
 
 #js-btn {
@@ -176,7 +169,7 @@
 .mateo {
     color: black;
     display: flex;
-    width: 95vw;
+    width: 100vw;
     align-items: center;
     justify-content: center;
     font-size: larger;
@@ -222,79 +215,6 @@
     font-size: 23px;
 }
 
-.hero-banner {
-    max-width: 100%;
-    height: 38rem;
-    background: black;
-}
-
-.banner-text-container {
-    width: 50%;
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    flex-direction: column;
-    padding-left: 17rem;
-}
-
-.banner-text-s {
-    padding-top: 15px;
-    color: white;
-}
-
-.banner-text {
-    color: white;
-    text-transform: uppercase;
-}
-
-.banner-btn-s {
-    margin-top: 25px;
-    border: none;
-    color: black;
-    border-radius: 18px;
-    padding: 10px;
-    width: 30%;
-    background: white;
-}
-
-.banner-btn button:hover {
-    background: grey;
-    transition: 0.4s;
-    color: white;
-}
-
-
-.center-coach {
-    max-width: 100%;
-    height: 30rem;
-    background: grey;
-    color: white;
-}
-
-.center-coach-text-container {
-    width: 50%;
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    flex-direction: column;
-    padding-left: 17rem;
-}
-
-.centr-team {
-    max-width: 100%;
-    height: 40rem;
-    background: white;
-    color: black;
-}
-
-.centr-team-text-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 4.3rem;
-}
 
 @media screen and (max-width: 768px) {
     .topnav {
@@ -308,49 +228,18 @@
     .heading-text {
         line-break: loose;
     }
-
+    
     .sidenav-container {
         display: flex;
     }
-
-    .hero-banner {
-        width: 100%;
-        padding: 20px;
-    }
-
+    
+   
     .banner-text-container {
         padding-left: 0px;
         width: 100%;
     }
 
-    .banner-btn button {
-        width: 100%;
-    }
-
-    .center-coach {
-        height: fit-content;
-        padding: 20px;
-    }
-
-    .center-coach-text-container {
-        width: 100%;
-        padding-left: 0px;
-        height: fit-content;
-    }
-
-    .centr-team {
-        padding: 20px;
-    }
-
-    .centr-team-text-container {
-        padding: 10px;
-        padding-top: 30px;
-    }
-
-    .centr-t-container {
-        width: 101%;
-    }
-
+    
     .item-text {
         font-size: 18px;
         padding-top: 5px;
@@ -392,7 +281,7 @@
         display: flex;
         flex-direction: column;
     }
-
+ 
     .show-nav {
         left: 0;
         display: flex;
@@ -447,7 +336,7 @@
         align-items: center;
     }
 
-    .modal-body p {
+    .modal-body p{
         color: black;
         font-size: 18px;
     }
@@ -455,9 +344,9 @@
 
 
 @media screen and (max-width: 390px) {
-    .parent-container {
-        height: 100%;
-    }
+   .parent-container {
+    height: 100%;
+   }
 
 }
 
@@ -577,3 +466,31 @@
         opacity: 1
     }
 }
+
+
+.hero-banner {
+    width: 100%;
+    height: 25rem;
+    background: red;
+}
+
+.hero-h4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

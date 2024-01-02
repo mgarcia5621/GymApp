@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="about.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Viga&display=swap");
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Viga&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2a8b2ce22e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="sidenav-container">
+            <div id="ham-container" onclick="toggleSideNav(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div id="mySideNav" class="sidenav-mob isVisible hide-nav">
+                <a class="active" href="/index.html">Home</a>
+                <a href="about">Exercises</a>
+                <a href="contact">About</a>
+                <div id="sign-in-div">
+                    <button id="sign-in" onclick="signIn()">Sign In</button>
+                    <div class="box-sign-in">
+                        Fill the forms down below to sign up with us!
+                        <div class="div-form">
+                            <form action="/action_page.php">
+                                <label for="fname">username</label><br />
+                                <input type="text" id="fname" name="fname" value="" /><br />
+                                <label for="lname">password</label><br />
+                                <input type="text" id="lname" name="lname" value="" /><br /><br />
+                                <input class="btn-submit" type="submit" value="Submit" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="darkMode()" class="darkmode">Dark Mode</button>
+            </div>
+        </div>
+        <div class="topnav">
+            <a class="active" href="/index.html">Home</a>
+            <a href="about">Exercises</a>
+            <a href="contact">About</a>
+            <div class="topnav-buttons">
+                <div id="sign-in-div">
+                    <button id="sign-in" onclick="signIn()">Sign In</button>
+                    <div class="box-sign-in">
+                        Fill the forms down below to sign up with us!
+                        <div class="div-form">
+                            <form action="/action_page.php">
+                                <label for="fname">username</label><br />
+                                <input type="text" id="fname" name="fname" value="" /><br />
+                                <label for="lname">password</label><br />
+                                <input type="text" id="lname" name="lname" value="" <input class="btn-submit"
+                                    type="submit" value="Submit" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="darkMode()" class="darkmode">Dark Mode</button>
+            </div>
+        </div>
+        <div class="hero-banner">  <!--make sure to set the height of this container to auto -->
+            <div class="hero-h4">
+                <div class="o-mission">
+                    <h4 class="O-Mission">Our Mission</h4>
+                </div>
+                <div class="h1-message">
+                    <h1>TO EMPOWER PEOPLE TO LIVE WELL BY ENERGIZING THEIR EVERY DAY.</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column" style="background-color:#aaa;">
+              <h2>Column 1</h2>
+              <p>Some text..</p>
+            </div>
+            <div class="column" style="background-color:#bbb;">
+              <h2>Column 2</h2>
+              <p>Some text..</p>
+            </div>
+            <div class="column" style="background-color:#aaa;">
+                <h2>Column 1</h2>
+                <p>Some text..</p>
+              </div>
+              <div class="column" style="background-color:#bbb;">
+                <h2>Column 2</h2>
+                <p>Some text..</p>
+              </div>
+              <div class="column" style="background-color:#aaa;">
+                <h2>Column 1</h2>
+                <p>Some text..</p>
+              </div>
+              <div class="column" style="background-color:#bbb;">
+                <h2>Column 2</h2>
+                <p>Some text..</p>
+              </div>
+          </div>
+    
+    
+        <div class="footer-mat">
+            <footer class="mateo">Created By Mateo 2023</footer>
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+        <div class="overlay"></div>
+    </div>
+
+
+</html>
